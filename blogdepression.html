@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation&family=Montserrat:ital,wght@1,300;1,400&family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@500&family=Nunito+Sans&family=Open+Sans&family=Pacifico&family=Poppins:ital@0;1&family=Raleway:ital@0;1&family=Roboto&family=Shantell+Sans:ital@1&family=Source+Sans+Pro&family=Zeyada&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/qt=q_95.webp" width="">
+    <title>Psychoknwmics Counceling & Educational Services</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .active{
+            color: rgb(210, 186, 6);
+        }
+
+        .container-2
+        {width: 90%;
+        margin: auto;
+    }
+
+    .nav-color{
+        background-color: #000000A6;
+        padding: 0  20px;
+    }
+
+        .menu:hover .Sub-Menu {
+            display: block;
+        }
+
+       
+        .menu:hover .sub-menu-it-services{
+            display: block;
+        }
+
+        .menu:hover .sub-menu-web-services{
+            display: block;
+        }
+
+        .menu a{ 
+            position: relative;
+        }
+        /* .menu a:after{
+            content:"";
+            position: absolute;
+            background-color: greenyellow;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.3s;
+        } */
+
+        .menu a:hover:after{
+            width: 100%;
+        }
+        /* section{
+            background-image:url("tailwin img/_backgroundscreeningservices.jpg") ;
+           padding-top: 100px;
+           padding-bottom: 50px;
+           padding-left: 50px;
+           padding-right: 50px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover ;  
+        } */
+        .ham-icon{display: none;}
+        
+        @media only screen and (max-width:1100px){
+            #nav-menu{
+            display: none;       
+            position: absolute;
+            left: 0;
+            top: 85px;
+            width: 100%;
+        }
+        .ham-icon{display: block;}
+        .menu-item{
+            background-color: #000000A6;
+            flex-direction: column;
+           
+           width: 100% ;
+        }
+        .menu a:after{
+            bottom: 0px;
+        }
+        .menu-item li{
+            padding: 4px 0;
+        }
+        .menu-item li a{
+            padding: 0;
+
+        }
+        .menu .sub-menu-it-services{
+            top:30px;
+            left: 0;
+            z-index: 1100;
+        }
+        
+        .menu .Sub-Menu{
+            top:30px;
+            left: 0;
+            z-index: 5;
+        }
+
+        .menu .sub-menu-web-services{
+            top:30px;
+            left: 0;
+            z-index: 5;
+        }
+        }
+    </style>
+</head>
+<body>
+     <!-- <div class="flex justify-between px-10 py-1 bg-slate-300 text-sm ">
+        <div><a href="">+91 7900108552</a></div>
+        <div class="">
+            <marquee behavior="" direction=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></marquee>
+        </div>
+    </div> -->
+    <div class="nav-color fixed w-full bg-black z-30">
+    <nav class="relative flex text-gray-300 justify-between items-center py-2 " >
+        <div>
+        <div class="bg-white ">
+          <a href="index.html"> <img src="img/qt=q_95.webp" alt="" ></a> 
+        </div>
+    </div>
+        <div id="nav-menu">
+            <ul class="flex  menu-item text-sm">
+           <li class="menu relative "><a href="index.html" class="py-2 mx-4 uppercase hover:text-yellow-300 ">Home</a></li> 
+           <li class="menu relative "><a href="whoweare.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">WHO WE ARE?</a>
+            </li>
+            <li class=" menu relative  "><a href="whatwedo.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">What we do?</i></a>
+             </li>
+             <li class="menu relative "><a href="blog.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">Blogs</a>
+            </li>
+            <li class="menu relative active"><a href="freeservices.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">free Resources</a></li>
+            
+        </ul>
+        </div>
+        <div class="flex items-center gap-5 text-sm">
+            <div><i class="fa-solid fa-cart-shopping"> <span class=" text-white">(1)</span></i></div>
+            <div>    
+  <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex items-center  p-2 text-sm font-medium text-center text-gray-900  rounded-lg  outline-none focus:ring-gray-50" type="button"> 
+   <span class="text-white text-lg"><i class="fa-solid fa-child"></i></span>
+  </button>
+  
+  <!-- Dropdown menu -->
+  <div id="dropdownDotsHorizontal" class="z-10 hidden bg-[#000000A6]  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+      <ul class="py-2 text-sm text-white dark:text-gray-200" aria-labelledby="dropdownMenuIconHorizontalButton">
+        <li>
+          <a href="Signin.html" class="block px-4 py-2 hover:bg-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-white">Sign In</a>
+        </li>
+        <li>
+          <a href="createaccount.html" class="block px-4 py-2 hover:bg-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-white">Create Account</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-white">Book</a>
+        </li>
+        
+      </ul>
+      <div class="py-2">
+        <a href="Signin.html" class="block px-4 py-2 text-sm text-white hover:bg-yellow-500 dark:hover:bg-yellow-500 dark:text-gray-200 dark:hover:text-white">My Account</a>
+      </div>
+  </div>
+  
+            </div>
+        </div>
+        <div  class="ham-icon"  onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!-- <div class="flex text-lg">
+            <form action="" class="px-6">
+            <input class="px-2 outline-none border" type="text" placeholder="search"> 
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+            <button >Login</button>
+        </div> -->
+     </nav> 
+</div> 
+
+<div class=" ">
+    <div class=" pt-[130px] container mx-auto">
+    <div><h1 class="uppercase text-center text-4xl my-10">BLOGS</h1></div>    
+        <div class="flex">
+            <div class="w-7/12">
+                <h1 class="text-yellow-500 mb-5"><span class="text-lg"><</span> All POST</h1>
+            <div>
+                <div class="mb-10"><h1 class="text-3xl">KILL DEPRESSION with these small but effective steps.</h1>
+                <p class="text-sm">13 May 2021</p>
+            </div>
+
+                <div class="mb-5"><p class="text-lg">13 May 2021</p></div>
+                <div class="mb-4"><p class="text-lg"><span>By :</span> Riddhi Sagar, Psychologist</p></div>
+            </div>
+            </div>
+            <div class="w-5/12">
+                <h1 class="font-semibold mt-5 mb-2">Sign up for blog updates!</h1>
+
+                <p class="w-80 my-2 text-sm">Join my email list to receive updates and information.</p>
+
+                <div><input type="text" placeholder="Email address" class="text-sm mr-4">
+                <button class="bg-yellow-500 border border-yellow-500 text-black hover:text-white hover:bg-yellow-700 px-4 py-2 rounded-lg" >SIGN UP</button></div>
+            </div>
+        </div>
+        <!-- .........blogs content1........... -->
+        <div>
+            <div class="grid grid-cols-2 ">
+                <div class="grid justify-items-center justify-self-center"><img src="img/rs=w_12801.webp" alt="" class="h-72"></div>
+                <div class="grid content-center">
+                    <h1 class="font-semibold text-lg my-5">Is Depression Self Curable?</h1>
+                    <p>Yes, Depression is manageable. It requires regular practice to regulate your thoughts, identify your rigid attitudes and demands on self, and world. Depression is an emotional disorder, and your emotions are outcome of what you think and how you speaking to yourself in the adverse situation.</p>
+                    <p>A person suffering from depression tends to experience low energy levels, withdraw themselves from activities that they enjoyed, loses interest in their jobs, chores and social interactions.</p>
+                </div>
+            </div>
+            <div class="my-2"><p>In some cases lose their appetite and experience sleep disturbances as well. Moreover, depression tends to be accompanied with feelings of hopelessness and helplessness which leads to lack of motivation further causing less or no effort to fight the problem.</p></div>
+        </div>
+
+        <!-- .........blogs content2........... -->
+        <div>
+            <h1 class="mt-4 font-semibold"> 8 steps to kill depression and change for better :</h1>
+            <div class="grid grid-cols-2 ">
+                <div class="grid content-center">
+                    <h1 class="text-lg my-2">1. Hygiene is Self Care:</h1>
+                    <p>Not following hygiene is a form of self neglect. Not keeping clean, wearing soiled clothes, poor grooming impacts the over all mood. Think about days from your past when you were well groomed and the confidence you carried. Consciously taking care of your hygiene is the first step towards your physical and mental health. Don't give your self any excuse to escape hygiene.</p>
+                </div>
+                <div class="grid justify-items-center justify-self-center"><img src="img/rs=w_12802.webp" alt="" class="h-72"></div>
+            </div>
+            <div class="my-2"> <h1 class="text-lg my-2">2. "Say no Sedentary Life"</h1>
+                <p>Go for morning or evening walks. Exercising releases happy hormones and neurotransmitters like Oxytocin, Serotonin and Endorphins which are our body's natural pain relivers and will make you feel happy, restful, confident and energetic. </p></div>
+
+                <div class="grid grid-cols-2 ">
+                    <div class="grid justify-items-center justify-self-center"><img src="img/rs=w_12803.webp" alt="" class="h-72"></div>
+                    <div class="grid content-center">
+                        <h1 class="text-lg my-2">3. "Perspective Taking"</h1>
+                        <p> We often think to ourselves "This is worst to happen to me" "This is unbearable". We humans often have a tendency to think in extreme when we really desire something or when something bad happens. But we often fail to understand the difference between bad and the worst and use them interchangeably. Ask yourself, "Is this the first that can happen?" definitely not!</p>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <p>Know that you are not the only one going through the adversity, there are many people around the corners of the world facing even more worse situation than you, and they are still persisting and sticking through themselves. Remember the saying: “There is no time like The Present” This is in your hand and you can handle.  </p>
+                </div>
+
+                <div class="grid grid-cols-2 ">  
+                    <div class="grid content-center">
+                        <h1 class="text-lg my-2">4. "Build & Engage in Connection Building"</h1>
+                        <p> Man is a social animal. We tend to work, live and perform better around people. Several researches have confirmed that making healthy connections helps relieving stress, increase our survival, decrease the chances of illnesses. In one of the articles by  Holt-Lunstad and colleagues it was stated that high social connections and interactions are related to low death rates and low social interactions is said to be twice risky that obesity. 
+                        </p>
+                    </div>
+                    <div class="grid justify-items-center justify-self-center"><img src="img/rs=w_12804.webp" alt="" class="h-72"></div>
+                </div>
+
+                <div class="grid grid-cols-2 "> 
+                    <div class="grid justify-items-center justify-self-center"><img src="img/rs=w_12805.webp" alt="" class="h-72"></div> 
+                    <div class="grid content-center">
+                        <h1 class="text-lg my-2">5. "Evaluate your Self-talks"</h1>
+                        <p>  Evaluate and reflect upon the way you think and talk to yourself about life situations. Be aware of the content of your thought process. About your self talk, ask is it practical? Is it realistic? Is it logical? Can I prove it with evidences? Write down your thoughts, and read it out loud, it will bring more sense.  
+                        </p>
+                    </div>
+                    
+                </div>
+
+                    <div class="">
+                        <h1 class="text-lg my-2 ">6. "Label Jars not Humans"</h1>
+                        <p> We are conditioned to associate our worth based on whether we are doin well as per societal expectations. In this rat race when you compare your failings with others also learn to look at your progress, because you are a combination of both your fall and rise. In this process do not call your self "loser" "failure" "less" "incapable", because we humans are complex process and not a static thing to be labeled. When you label yourself, you are being judgmental and dogmatic. Practice Unconditional acceptance.  
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 ">  
+                        <div class="grid content-center">
+                            <h1 class="text-lg my-2">7. "Don't Assume, Don't Judge, Just Communicate"</h1>
+                            <p> When you want to be understood, communicate about your thoughts to your loved ones. If you want to seek help, want a favor or have any expectations from others don't assume they should understand without you speaking to them, you are dealing with a human and not a God!  
+                            </p>
+                        </div>
+                        <div class="grid justify-items-center justify-self-center"><img src="img/rs=w_12806.webp" alt="" class="h-72"></div>
+                    </div>
+                
+                    <div class="mb-5">
+                        <h1 class="text-lg my-2">8. "Professional Help"</h1>
+                        <p> In spite of trying the above, if it doesn't help, reach out to the near Psychologist / Psychiatrist. Don't judge yourself to seek help regarding your mental health because you wouldn't judge yourself for seeking help for your physical health. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center my-5">
+                    <h1 class="text-sm font-semibold">Share this post:</h1>
+                    <a href="www.facebook.com" class="text-blue-700 text-2xl mx-2"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="www.instagram.com" class="text-blue-800 text-2xl mx-2 "><i class="fa-brands fa-square-twitter"></i></i></a>   
+                </div>
+</div>
+</div>
+</div>
+
+    <footer class="">
+        <div class="bg-[#000000A6]">
+        <div id="nav-menu text-center ">
+            <ul class="flex  menu-item justify-center lg:h-32 items-center">
+           <li class="menu relative"><a href="index.html" class="py-2 mx-4 uppercase hover:text-yellow-300">Home</a></li> 
+           <li class="menu relative"><a href="whoweare.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">WHO WE ARE?</a>
+            </li>
+            <li class=" menu relative  "><a href="whatwedo.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">What we do?</i></a>
+             </li>
+             <li class="menu relative"><a href="blog.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">Blogs</a>
+            </li>
+            <li class="menu relative active"><a href="freeservices.html"  class="py-2 mx-4 uppercase hover:text-yellow-300">free Resources</a></li>
+           
+        </ul>
+    </div>
+        <div class="text-center lg:h-14 py-4">
+            <a href="www.facebook.com" class="text-blue-700 text-4xl mx-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="www.instagram.com" class="text-red-800 text-4xl mx-2"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="text-center lg:h-14 py-2"><h1 class="font-semibold text-white text-md">PSYCHOKNOWMICS COUNSELING & EDUCATIONAL SERVICES</h1></div>
+        <div class="grid grid-cols-2 lg:h-14 px-10 pb-20">
+            <div><p>COPYRIGHT © 2023 PSYCHOKNOWMICS COUNSELING & EDUCATIONAL SERVICES - ALL RIGHTS RESERVED.</p></div>
+            <div class="grid justify-end "><p>POWERED BY <span class="text-yellow-300">GODADDY</span></p></div>
+        </div>
+
+        
+    
+</div>
+    </footer>
+     
+    
+
+     <script>
+        function myFunction() {
+          var x = document.getElementById("nav-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+</html>
